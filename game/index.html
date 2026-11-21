@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Twin Harbour — Spot the Difference</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <h1>TWIN HARBOUR</h1>
+      <p class="sub">Spot the difference &mdash; two pictures, seven secrets each</p>
+    </header>
+    <div id="hud">
+      <span id="sceneLabel">Scene 1 / 3 &mdash; Sunset Harbour</span>
+      <span id="counter">7 differences left</span>
+      <span id="timer">5:00</span>
+      <span id="score">Score 0</span>
+      <span id="mistakes">Misses 0</span>
+    </div>
+    <canvas id="game" width="1160" height="460"></canvas>
+    <div id="controls">
+      <button id="hintBtn" type="button">Hint (H) &minus;50</button>
+      <button id="nextBtn" type="button" disabled>Next scene (N)</button>
+      <button id="restartBtn" type="button">Restart (R)</button>
+      <span id="message">Click a difference on either picture. Arrow keys move the cursor, Enter selects.</span>
+    </div>
+    <div id="overlay"></div>
+  </div>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

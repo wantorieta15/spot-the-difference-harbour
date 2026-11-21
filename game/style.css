@@ -1,0 +1,81 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: #0d1b2a;
+  color: #eaf2f8;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+#wrap { width: 1200px; padding: 18px 20px 28px; }
+header { text-align: center; margin-bottom: 10px; }
+header h1 {
+  font-size: 42px;
+  letter-spacing: 10px;
+  color: #ffd166;
+  text-shadow: 0 3px 0 #7a4a12, 0 6px 14px rgba(0, 0, 0, 0.6);
+}
+header .sub { color: #9fc5e8; font-size: 15px; letter-spacing: 2px; margin-top: 4px; }
+#hud {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: space-between;
+  background: #14324f;
+  border: 2px solid #2b5876;
+  border-radius: 10px;
+  padding: 9px 16px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: bold;
+}
+#hud #counter { color: #ffd166; }
+#hud #timer { color: #7ee081; }
+#game {
+  display: block;
+  width: 1160px;
+  height: 460px;
+  background: #06121f;
+  border: 3px solid #2b5876;
+  border-radius: 12px;
+  cursor: crosshair;
+}
+#controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 12px;
+}
+#controls button {
+  background: #ef8354;
+  color: #1d1305;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 16px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#controls button:disabled { background: #4a5a68; color: #9fb2c0; cursor: default; }
+#controls button:hover:not(:disabled) { background: #ffd166; }
+#message { color: #cfe3f2; font-size: 14px; margin-left: 6px; }
+#overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(4, 12, 22, 0.82);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 10;
+}
+#overlay .panel {
+  background: #14324f;
+  border: 3px solid #ffd166;
+  border-radius: 16px;
+  padding: 36px 52px;
+  max-width: 560px;
+}
+#overlay h2 { font-size: 34px; color: #ffd166; margin-bottom: 12px; letter-spacing: 3px; }
+#overlay p { font-size: 17px; line-height: 1.6; color: #eaf2f8; }
+#overlay .big { font-size: 22px; font-weight: bold; color: #7ee081; margin-top: 10px; }
